@@ -19,12 +19,14 @@ body { font: 100% palatino, "times new roman", serif; color: #333; background: #
 #SiteWrapper { overflow: auto; }
 
 nav { margin: 0px auto 50px auto; text-align: center; }
-nav ul { display: inline-block; text-align: center; background: #333; padding: 7px 30px 5px 30px; border-bottom: 1px solid #444; text-shadow: -1px 1px 1px #222; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;opacity: .3; -webkit-transition: opacity .5s ease;}
+nav ul { display: inline-block; text-align: center; background: #333; padding: 7px 30px 5px 30px; border-bottom: 1px solid #444; text-shadow: -1px 1px 1px #222; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;opacity: .3; }
 nav ul:hover {opacity: .85;}
 nav ul li { display: inline-block; padding: 0 10px; text-transform: uppercase; }
 nav ul li a { color: #dedede; text-decoration: none; }
 nav ul li a:hover { text-decoration: underline;}
 nav ul li.current_page_item a { text-decoration: underline; }
+.csstransitions nav ul {-webkit-transition: opacity .5s ease;}
+
 
 #Twitter { font: normal 90% inherit; color: #555; text-align: center; margin: 0 0 15px 0;}
 #Twitter a { color: #888; text-decoration: none; }
@@ -47,6 +49,18 @@ article .content .comments { text-align: center; margin: 20px 0 }
 article .content .comments a {color: #333;}
 article:last-of-type { margin-bottom: 20px; }
 
+/* page */
+.page article header h1 { width: 60%; border-bottom: 1px solid #ccc; padding: 0 0 10px 0; margin: 0 auto 35px auto; }
+.page article a { color: #666; }
+.page article a:hover { color: #333; }
+.page article p { margin-bottom: 10px; line-height: 1.5em; }
+.page article ul { margin-left: 10px; padding-left: 10px; }
+.page article ul li { margin: 0 0 5px 0; }
+
+.amzshcs { overflow: auto; }
+.amzshcs .amzshcs-item { float: left; margin: 20px; width:245px; height: 310px; }
+.amzshcs .amzshcs-item img { width: 200px; height: auto; }
+
 .page-nav { padding: 20px;width: 80%; margin: 0 auto; text-align: center; }
 .page-nav .next { float: right; }
 .page-nav .prev { float: left; overflow: hidden; }
@@ -59,3 +73,8 @@ footer { overflow: auto; }
 footer .content p { font: normal 93% inherit; text-align: center; color: #ccc; margin: 20px 0; }
 footer .content p a { color: #aaa; }
 footer .content p a:hover { text-decoration: none; }
+
+/* WP */
+.alignleft,img.alignleft{float:left;margin:5px 10px 5px 0;}
+.alignright,img.alignright{float:right;margin:5px 0 5px 10px;}
+.aligncenter,div.aligncenter,img.aligncenter{text-align:center;display:block;margin:10px auto;}

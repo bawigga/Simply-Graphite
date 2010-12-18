@@ -24,10 +24,10 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" charset="utf-8" />
 
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
-	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.6.min.js"></script>
-
+  <?php
+    if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+  ?>
+  <!-- WP_HEAD -->
   <?php wp_head(); ?>
 </head>
 
@@ -36,7 +36,7 @@
 <div id="SiteWrapper">
 	<header>
 		<hgroup id="Header">
-			<h1><a href="<?php echo get_option('home'); ?>/" title="Home"><?php  bloginfo('name');?></a></h1> 
+			<h1><a href="<?php echo get_option('home'); ?>/" title="Home"><?php bloginfo('name');?></a></h1> 
 			<h2><?php  bloginfo('description'); ?></h2>
 		</hgroup>
 		<nav>
